@@ -1,0 +1,45 @@
+<#@ Template Language="C#" HostSpecific="True" Inherits="DynamicTransform" #>
+<#@ Output Extension="cs" #>
+using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Web;
+
+namespace <#= Model.DbContextNamespace #>
+{
+    public class <#= Model.DbContextType #> : DbContext
+    {
+		private static <#= Model.DbContextType #> Instance;
+		private static object SyncRoot = new object();
+
+		public static <#= Model.DbContextType #> Current 
+		{
+			get
+			{
+				if(Instance == null)
+				{
+					lock(SyncRoot)
+					{
+						if(Instance == null)
+						{
+							Instance = new <#= Model.DbContextType #>();
+						}
+					}
+				}
+
+				return Instance;
+			}
+		}
+
+        // You can add custom code to this file. Changes will not be overwritten.
+        // 
+        // If you want Entity Framework to drop and regenerate your database
+        // automatically whenever you change your model schema, add the following
+        // code to the Application_Start method in your Global.asax file.
+        // Note: this will destroy and re-create your database with every model change.
+        // 
+        // System.Data.Entity.Database.SetInitializer(new System.Data.Entity.DropCreateDatabaseIfModelChanges<<#= Model.DbContextNamespace #>.<#= Model.DbContextType #>>());
+
+    }
+}

@@ -1,0 +1,91 @@
+﻿<#@ template language="C#" HostSpecific="True"  inherits="DynamicTransform" #>
+<#@ assembly name="System.Data.Entity" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="EnvDTE" #>
+<#@ Output Extension="cs" #>
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Web;
+<# foreach(var ns in new[] { Model.ModelTypeNamespace, Model.DbContextNamespace }.Where(x => !string.IsNullOrEmpty(x) && (x != Model.RepositoryNamespace)).Distinct()) { #>
+using <#= ns #>;
+<# } #>
+
+namespace <#= Model.RepositoryNamespace #>
+{ 
+<# 
+    var modelType = (CodeType)Model.ModelType; 
+    var modelName = modelType.Name; 
+    var modelNamePlural = Model.ModelTypePluralized; 
+    var contextName = ((CodeType)Model.DbContextType).Name; 
+    var primaryKeyProperty = modelType.VisibleMembers().OfType<CodeProperty>().Single(x => x.Name == Model.PrimaryKey);
+    var isObjectContext = ((CodeType)Model.DbContextType).IsAssignableTo<System.Data.Objects.ObjectContext>();
+#>
+    public class <#= modelName #>Repository : I<#= modelName #>Repository
+    {
+        public IQueryable<<#= modelName #>> Get<#= modelNamePlural #>()
+        {
+            return <#= contextName #>.Current.<#= modelNamePlural #>;
+        }
+
+        public <#= modelName #> Find(<#= primaryKeyProperty.Type.AsString #> id)
+        {
+<# if(isObjectContext) { #>
+            return <#= contextName #>.Current.<#= modelNamePlural #>.Single(x => x.<#= Model.PrimaryKey #> == id);
+<# } else { #>
+            return <#= contextName #>.Current.<#= modelNamePlural #>.Find(id);
+<# } #>
+        }
+
+        public void InsertOrUpdate(<#= modelName #> <#= modelName.ToLower() #>)
+        {
+            if (<#= modelName.ToLower() #>.<#= Model.PrimaryKey #> == default(<#= primaryKeyProperty.Type.AsString #>)) {
+                // New entity
+<# if(primaryKeyProperty.Type.AsString == "System.Guid") { #>
+                <#= modelName.ToLower() #>.<#= primaryKeyProperty.Name #> = Guid.NewGuid();
+<# } #>
+<# if(isObjectContext) { #>
+                <#= contextName #>.Current.<#= modelNamePlural #>.AddObject(<#= modelName.ToLower() #>);
+<# } else { #>
+                <#= contextName #>.Current.<#= modelNamePlural #>.Add(<#= modelName.ToLower() #>);
+<# } #>
+            } else {
+                // Existing entity
+<# if(isObjectContext) { #>
+                <#= contextName #>.Current.<#= modelNamePlural #>.Attach(<#= modelName.ToLower() #>);
+                <#= contextName #>.Current.ObjectStateManager.ChangeObjectState(<#= modelName.ToLower() #>, EntityState.Modified);
+<# } else { #>
+                <#= contextName #>.Current.Entry(<#= modelName.ToLower() #>).State = EntityState.Modified;
+<# } #>
+            }
+        }
+
+        public void Delete(<#= primaryKeyProperty.Type.AsString #> id)
+        {
+<# if(isObjectContext) { #>
+            var <#= modelName.ToLower() #> = <#= contextName #>.Current.<#= modelNamePlural #>.Single(x => x.<#= Model.PrimaryKey #> == id);
+            <#= contextName #>.Current.<#= modelNamePlural #>.DeleteObject(<#= modelName.ToLower() #>);
+<# } else { #>
+            var <#= modelName.ToLower() #> = <#= contextName #>.Current.<#= modelNamePlural #>.Find(id);
+            <#= contextName #>.Current.<#= modelNamePlural #>.Remove(<#= modelName.ToLower() #>);
+<# } #>
+        }
+
+        public void Save()
+        {
+            <#= contextName #>.Current.SaveChanges();
+        }
+    }
+
+    public interface I<#= modelName #>Repository
+    {
+        IQueryable<<#= modelName #>> Get<#= modelNamePlural #>();
+        <#= modelName #> Find(<#= primaryKeyProperty.Type.AsString #> id);
+        void InsertOrUpdate(<#= modelName #> <#= modelName.ToLower() #>);
+        void Delete(<#= primaryKeyProperty.Type.AsString #> id);
+        void Save();
+    }
+}

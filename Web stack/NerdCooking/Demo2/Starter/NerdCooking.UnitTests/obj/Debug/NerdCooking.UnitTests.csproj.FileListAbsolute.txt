@@ -1,0 +1,20 @@
+D:\Projects\NerdCooking\NerdCooking.UnitTests\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\NerdCooking\NerdCooking.UnitTests\bin\Debug\NerdCooking.UnitTests.dll
+D:\Projects\NerdCooking\NerdCooking.UnitTests\bin\Debug\NerdCooking.UnitTests.pdb
+D:\Projects\NerdCooking\NerdCooking.UnitTests\bin\Debug\EntityFramework.dll
+D:\Projects\NerdCooking\NerdCooking.UnitTests\bin\Debug\NerdCooking.dll
+D:\Projects\NerdCooking\NerdCooking.UnitTests\bin\Debug\NerdCooking.pdb
+D:\Projects\NerdCooking\NerdCooking.UnitTests\bin\Debug\EntityFramework.xml
+D:\Projects\NerdCooking\NerdCooking.UnitTests\obj\Debug\NerdCooking.UnitTests.dll
+D:\Projects\NerdCooking\NerdCooking.UnitTests\obj\Debug\NerdCooking.UnitTests.pdb
+D:\Projects\NerdCooking\NerdCooking.UnitTests\bin\Debug\Rhino.Mocks.dll
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo2\Starter\NerdCooking.UnitTests\bin\Debug\NerdCooking.UnitTests.dll
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo2\Starter\NerdCooking.UnitTests\bin\Debug\NerdCooking.UnitTests.pdb
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo2\Starter\NerdCooking.UnitTests\bin\Debug\EntityFramework.dll
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo2\Starter\NerdCooking.UnitTests\bin\Debug\NerdCooking.dll
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo2\Starter\NerdCooking.UnitTests\bin\Debug\Rhino.Mocks.dll
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo2\Starter\NerdCooking.UnitTests\bin\Debug\NerdCooking.pdb
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo2\Starter\NerdCooking.UnitTests\bin\Debug\EntityFramework.xml
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo2\Starter\NerdCooking.UnitTests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo2\Starter\NerdCooking.UnitTests\obj\Debug\NerdCooking.UnitTests.dll
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo2\Starter\NerdCooking.UnitTests\obj\Debug\NerdCooking.UnitTests.pdb

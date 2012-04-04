@@ -1,0 +1,17 @@
+﻿@model NerdCooking.Models.Workshop
+
+<div class="workshop">
+    <div class="workshop-date">
+        <div class="workshop-date-day">
+            @Model.Date.Day
+        </div>
+        <div class="workshop-date-month">
+            @System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(Model.Date.Month)
+        </div>
+    </div>
+    <div class="workshop-details">
+        <h3>@Model.Title</h3>
+        <p>@Model.Description</p>
+        <p>@Html.ActionLink("View details", "Details", new { controller = "Workshops", id= @Model.Id }, new { @class = "workshop-details-link" })</p>
+    </div>
+</div>

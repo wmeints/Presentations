@@ -1,0 +1,7 @@
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo1\Step2\NerdCookingDemo1\NerdCookingDemo1\bin\NerdCookingDemo1.dll
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo1\Step2\NerdCookingDemo1\NerdCookingDemo1\bin\NerdCookingDemo1.pdb
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo1\Step2\NerdCookingDemo1\NerdCookingDemo1\bin\EntityFramework.dll
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo1\Step2\NerdCookingDemo1\NerdCookingDemo1\bin\EntityFramework.xml
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo1\Step2\NerdCookingDemo1\NerdCookingDemo1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo1\Step2\NerdCookingDemo1\NerdCookingDemo1\obj\Debug\NerdCookingDemo1.dll
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo1\Step2\NerdCookingDemo1\NerdCookingDemo1\obj\Debug\NerdCookingDemo1.pdb

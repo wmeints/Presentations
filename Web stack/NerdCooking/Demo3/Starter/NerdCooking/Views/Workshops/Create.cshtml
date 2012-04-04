@@ -1,0 +1,41 @@
+﻿@model NerdCooking.Models.Workshop
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container_12">
+    <div class="grid_12">
+        @using (Html.BeginForm("Create", "Workshops", FormMethod.Post)) {
+        
+        @Html.ValidationSummary(true,"Unable to create the new workshop")
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Title)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Title)
+            @Html.ValidationMessageFor(model => model.Title)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Date)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Date)
+            @Html.ValidationMessageFor(model => model.Date)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Description)
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(model => model.Description)
+            @Html.ValidationMessageFor(model => model.Description)
+        </div>
+        <div class="editor-label">
+            <input type="submit" value="Save" />
+        </div>
+        }    
+    </div>
+</div>
+
+
+

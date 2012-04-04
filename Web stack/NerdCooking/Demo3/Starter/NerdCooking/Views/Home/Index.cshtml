@@ -1,0 +1,73 @@
+﻿@model NerdCooking.Models.IndexViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container_12 clearfix" id="content">
+    <div class="grid_9">
+        <h2>Upcoming workshops</h2>
+        @foreach (var workshop in Model.UpcomingWorkshops)
+        {
+            Html.RenderPartial("~/Views/Shared/_WorkshopListItem.cshtml", (NerdCooking.Models.Workshop)workshop);
+        }
+
+    </div>
+
+    <div class="grid_3">
+        <h2>About</h2>
+        <p>Nerd cooking is a sample application that was originally produced to demonstrate.
+        Just how much fun ASP.NET and HTML5 can be. It's not complete, far from it, but what 
+        else did you expect from a demo application?</p>
+        <p>Have a look around and <a href="mailto:willemm@infosupport.com">let me know</a> if you have any questions.</p>
+    </div>
+</div>
+
+<div class="container_12 clearfix" id="content-after">
+    <div class="grid_6">
+        <h2>Organize a workshop</h2>
+        <p>Want to cook up something nice? Organize a new workshop!</p>
+        @using (Html.BeginForm("Create", "Workshops", FormMethod.Post))
+        {
+        <div class="editor-label">
+            <label for="date">Title:</label>
+        </div>
+        <div class="editor-field">
+            <input type="text" id="Title" name="Title" />
+        </div>
+        <div class="editor-label">
+            <label for="date">Date:</label>
+        </div>
+        <div class="editor-field">
+            <input type="date" id="Date" name="Date"/>
+        </div>
+        <div class="editor-label">
+            <label for="Description">Description:</label>
+        </div>
+        <div class="editor-field">
+            <textarea id="Description" name="Description"></textarea>
+        </div>
+        <div class="editor-label">
+            <input type="submit" value="Organize" />
+        </div>
+        }
+    </div>
+    <div class="grid_6">
+        <h2>Statistics</h2>
+        <p>Here's a few statistics to satisfy your inner nerdness</p>
+        <ul>
+            <li>
+                <span>Number of workshops organized: </span>
+                <span>2</span>
+            </li>
+            <li>
+                <span>Upcoming number of workshops: </span>
+                <span>2</span>
+            </li>
+            <li>
+                <span>Number of members: </span>
+                <span>2</span>
+            </li>
+        </ul>
+    </div>
+</div>

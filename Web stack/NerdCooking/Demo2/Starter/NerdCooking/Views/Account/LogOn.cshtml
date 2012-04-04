@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "LogOn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container_12">
+    <div class="grid_12"> 
+        @using(Html.BeginForm("LogOn","Account",FormMethod.Post)) {
+        <h2>Log on</h2>
+        <p>Please provide your log on details to use the application</p>
+        @Html.ValidationSummary()
+        <div class="editor-label">
+            <label for="username">Username:</label>
+        </div>
+        <div class="editor-field">
+            <input type="text" id="username" name="username"/>
+        </div>
+        <div class="editor-label">
+            <label for="password">Username:</label>
+        </div>
+        <div class="editor-field">
+            <input type="password" id="password" name="password" />
+        </div>
+        <div class="editor-label">
+            <label for="rememberMe">Remember my login:</label>
+        </div>
+        <div class="editor-field">
+            <input type="checkbox" id="rememberMe" name="rememberMe" />
+        </div>
+        <div class="editor-label">
+            <input type="submit" value="Register" />
+        </div>
+        }
+    </div>
+    
+</div>

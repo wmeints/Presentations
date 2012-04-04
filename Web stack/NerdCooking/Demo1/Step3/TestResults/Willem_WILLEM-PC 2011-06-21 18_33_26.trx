@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="616851f8-fc1c-40b6-99a4-694f0d5a01e1" name="Willem@WILLEM-PC 2011-06-21 18:33:26" runUser="Willem-PC\Willem" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="74c5a9a4-95ca-4789-862b-96f7eeebc740">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Willem_WILLEM-PC 2011-06-21 18_33_26">
+      <DeploymentItem filename="C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo1\Step2\NerdCookingDemo1\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll" />
+      <DeploymentItem filename="C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo1\Step2\NerdCookingDemo1\NerdCookingDemo1\bin\NerdCookingDemo1.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-06-21T18:33:26.6365050+02:00" queuing="2011-06-21T18:33:27.0665296+02:00" start="2011-06-21T18:33:27.1045317+02:00" finish="2011-06-21T18:33:29.9826964+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\users\willem\dropbox\presentaties\web stack\nerdcooking\demo1\step2\nerdcookingdemo1\nerdcookingdemo1.unittests\bin\debug\nerdcookingdemo1.unittests.dll" id="f7462db4-5458-3d0f-24cf-156d6691639f">
+      <Execution id="bb79bcd4-1f4b-4256-8143-15022e61fe22" />
+      <TestMethod codeBase="C:/Users/Willem/Dropbox/Presentaties/Web stack/NerdCooking/Demo1/Step2/NerdCookingDemo1/NerdCookingDemo1.UnitTests/bin/Debug/NerdCookingDemo1.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NerdCookingDemo1.UnitTests.UnitTest1, NerdCookingDemo1.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f7462db4-5458-3d0f-24cf-156d6691639f" executionId="bb79bcd4-1f4b-4256-8143-15022e61fe22" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="bb79bcd4-1f4b-4256-8143-15022e61fe22" testId="f7462db4-5458-3d0f-24cf-156d6691639f" testName="TestMethod1" computerName="WILLEM-PC" duration="00:00:01.1220200" startTime="2011-06-21T18:33:27.1155324+02:00" endTime="2011-06-21T18:33:28.4486086+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bb79bcd4-1f4b-4256-8143-15022e61fe22">
+    </UnitTestResult>
+  </Results>
+</TestRun>

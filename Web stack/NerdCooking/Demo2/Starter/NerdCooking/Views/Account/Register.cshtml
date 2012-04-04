@@ -1,0 +1,53 @@
+﻿@model NerdCooking.Models.RegistrationViewModel
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container_12">
+    <div class="grid_12">
+        @using(Html.BeginForm("Register","Account",FormMethod.Post)) {
+        <h2>Register</h2>
+        <p>Please provide your details to register a new account</p>
+        @Html.ValidationSummary()
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UserName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UserName)
+            @Html.ValidationMessageFor(model => model.UserName)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Password)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Password)
+            @Html.ValidationMessageFor(model => model.Password)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PasswordConfirmation)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PasswordConfirmation)
+            @Html.ValidationMessageFor(model => model.PasswordConfirmation)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FullName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FullName)
+            @Html.ValidationMessageFor(model => model.FullName)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EmailAddress)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.EmailAddress)
+            @Html.ValidationMessageFor(model => model.EmailAddress)
+        </div>
+        <div class="editor-label">
+            <input type="submit" value="Register" />
+        </div>
+        }    
+    </div>
+</div>

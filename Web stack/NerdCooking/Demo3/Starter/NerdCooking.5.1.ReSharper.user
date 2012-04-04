@@ -1,0 +1,339 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="prop" priority="7" />
+      <Item value="string" priority="13" />
+      <Item value="private" priority="6" />
+      <Item value="_workshopRepository" priority="4" />
+      <Item value="new" priority="23" />
+      <Item value="WorkshopRepository" priority="1" />
+      <Item value="ViewBag" priority="0" />
+      <Item value="return" priority="17" />
+      <Item value="NerdCookingContext`0" priority="4" />
+      <Item value="item" priority="0" />
+      <Item value="DateTime`0" priority="2" />
+      <Item value="IEnumerable" priority="0" />
+      <Item value="Workshop`0" priority="2" />
+      <Item value="UpcomingWorkshops" priority="0" />
+      <Item value="foreach" priority="3" />
+      <Item value="var" priority="13" />
+      <Item value="in" priority="3" />
+      <Item value="IMembershipRepository`0" priority="1" />
+      <Item value="IWorkshopRepository`0" priority="1" />
+      <Item value="this" priority="5" />
+      <Item value="MembershipRepository" priority="1" />
+      <Item value="try" priority="1" />
+      <Item value="View`0" priority="6" />
+      <Item value="_membershipRepository" priority="2" />
+      <Item value="membership" priority="7" />
+      <Item value="Reservation`0" priority="1" />
+      <Item value="Reservation" priority="1" />
+      <Item value="reservation" priority="7" />
+      <Item value="workshop" priority="17" />
+      <Item value="IReservationRepository`0" priority="1" />
+      <Item value="reservationRepository" priority="1" />
+      <Item value="_reservationRepository" priority="2" />
+      <Item value="ReservationRepository" priority="0" />
+      <Item value="using" priority="1" />
+      <Item value="TransactionScope" priority="1" />
+      <Item value="scope" priority="0" />
+      <Item value="RedirectToAction`0" priority="3" />
+      <Item value="int" priority="0" />
+      <Item value="public" priority="7" />
+      <Item value="ActionResult`0" priority="4" />
+      <Item value="object" priority="0" />
+      <Item value="static" priority="2" />
+      <Item value="ProfileBase" priority="0" />
+      <Item value="profile" priority="1" />
+      <Item value="username" priority="3" />
+      <Item value="if" priority="6" />
+      <Item value="profilePropertyValue" priority="3" />
+      <Item value="else" priority="0" />
+      <Item value="ClientDataTypeModelValidatorProvider`0" priority="0" />
+      <Item value="null" priority="0" />
+      <Item value="outputValue" priority="1" />
+      <Item value="Deleted" priority="0" />
+      <Item value="DropCreateDatabaseAlways" priority="0" />
+      <Item value="ClassInitialize" priority="0" />
+      <Item value="void" priority="0" />
+      <Item value="WorkshopRepository`0" priority="0" />
+      <Item value="repository" priority="8" />
+      <Item value="Assert`0" priority="5" />
+      <Item value="results" priority="1" />
+      <Item value="foundWorkshop" priority="2" />
+      <Item value="UserName" priority="1" />
+      <Item value="TestContext`0" priority="0" />
+      <Item value="workshopRepositoryStub" priority="2" />
+      <Item value="MockRepository`0" priority="0" />
+      <Item value="MembershipRepository`0" priority="0" />
+      <Item value="membershipRepositoryStub" priority="2" />
+      <Item value="controller" priority="0" />
+      <Item value="Workshop" priority="0" />
+      <Item value="as" priority="0" />
+      <Item value="RedirectToRouteResult`0" priority="0" />
+      <Item value="Membership`0" priority="1" />
+      <Item value="IsConfirmed" priority="0" />
+      <Item value="true" priority="0" />
+      <Item value="Id" priority="0" />
+      <Item value="IsOptional" priority="0" />
+      <Item value="false" priority="1" />
+      <Item value="Arg`0" priority="0" />
+      <Item value="arg" priority="0" />
+      <Item value="bool" priority="0" />
+      <Item value="ModelState`0" priority="1" />
+      <Item value="String`0" priority="2" />
+      <Item value="FormsAuthentication`0" priority="1" />
+      <Item value="rememberMe" priority="0" />
+      <Item value="Request" priority="1" />
+      <Item value="Redirect`0" priority="0" />
+      <Item value="Authorize" priority="0" />
+      <Item value="Roles" priority="0" />
+      <Item value="HttpPost" priority="0" />
+      <Item value="catch" priority="0" />
+      <Item value="Membership" priority="2" />
+      <Item value="registrationData" priority="2" />
+      <Item value="ctor" priority="0" />
+      <Item value="userAccount" priority="0" />
+      <Item value="CustomValidation" priority="0" />
+      <Item value="typeof" priority="0" />
+      <Item value="RegistrationViewModel`0" priority="2" />
+      <Item value="ErrorMessage" priority="0" />
+      <Item value="ValidationResult`0" priority="1" />
+      <Item value="ValidationContext`0" priority="0" />
+      <Item value="context" priority="2" />
+      <Item value="viewModel" priority="2" />
+      <Item value="ValidationResult" priority="0" />
+      <Item value="Required" priority="0" />
+      <Item value="Display" priority="0" />
+      <Item value="DataType" priority="0" />
+      <Item value="DataType`0" priority="0" />
+      <Item value="Name" priority="3" />
+      <Item value="MembershipCreateUserException" priority="0" />
+      <Item value="ex" priority="1" />
+      <Item value="override" priority="0" />
+      <Item value="ModelBinder" priority="0" />
+      <Item value="DefaultModelBinder`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NerdCooking.Models.NerdCookingContext">
+      <Item value="Current" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NerdCooking.Models.NerdCookingContext">
+      <Item value="Workshops" priority="0" />
+      <Item value="Memberships" priority="0" />
+      <Item value="SaveChanges`0" priority="0" />
+      <Item value="Entry`0" priority="0" />
+      <Item value="Reservations" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Entity.DbSet`1">
+      <Item value="Where`1" priority="2" />
+      <Item value="Include`0" priority="0" />
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NerdCooking.Models.Workshop">
+      <Item value="Date" priority="2" />
+      <Item value="Reservations" priority="8" />
+      <Item value="Id" priority="3" />
+      <Item value="Title" priority="1" />
+      <Item value="Description" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NerdCooking.Models.IWorkshopRepository">
+      <Item value="GetUpcomingWorkshops`0" priority="1" />
+      <Item value="Save`0" priority="0" />
+      <Item value="Find`0" priority="0" />
+      <Item value="InsertOrUpdate`0" priority="1" />
+      <Item value="AssertWasCalled`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NerdCooking.Models.Membership">
+      <Item value="IsOptional" priority="1" />
+      <Item value="IsConfirmed" priority="1" />
+      <Item value="UserName" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NerdCooking.Models.Reservation">
+      <Item value="UserName" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.ICollection`1">
+      <Item value="Add`0" priority="2" />
+      <Item value="ElementAt`1" priority="0" />
+      <Item value="Remove`0" priority="0" />
+      <Item value="Count" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NerdCooking.Models.IReservationRepository">
+      <Item value="InsertOrUpdate`0" priority="0" />
+      <Item value="Save`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Profile.ProfileBase">
+      <Item value="Initialize`0" priority="0" />
+      <Item value="GetPropertyValue`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="3" />
+      <Item value="IsNullOrEmpty`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Entity.Infrastructure.DbQuery`1">
+      <Item value="FirstOrDefault`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Entity.Infrastructure.DbEntityEntry`1">
+      <Item value="State" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NerdCooking.Models.WorkshopRepository">
+      <Item value="InsertOrUpdate`0" priority="2" />
+      <Item value="Find`0" priority="1" />
+      <Item value="Save`0" priority="0" />
+      <Item value="Stub`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Microsoft.VisualStudio.TestTools.UnitTesting.Assert">
+      <Item value="IsNotNull`0" priority="1" />
+      <Item value="AreEqual`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Rhino.Mocks.MockRepository">
+      <Item value="GenerateStub`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NerdCooking.Controllers.WorkshopsController">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NerdCooking.Models.IMembershipRepository">
+      <Item value="Stub`2" priority="0" />
+      <Item value="GetMemberships`0" priority="0" />
+      <Item value="InsertOrUpdate`0" priority="0" />
+      <Item value="Save`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rhino.Mocks.Interfaces.IMethodOptions`1">
+      <Item value="Return`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Rhino.Mocks.Arg`1">
+      <Item value="Is" priority="0" />
+      <Item value="Matches`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rhino.Mocks.Constraints.IsArg`1">
+      <Item value="Equals`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.Security.FormsAuthentication">
+      <Item value="Authenticate`0" priority="0" />
+      <Item value="RedirectFromLoginPage`0" priority="0" />
+      <Item value="SetAuthCookie`0" priority="0" />
+      <Item value="SignOut`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.Security.Membership">
+      <Item value="ValidateUser`0" priority="0" />
+      <Item value="CreateUser`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NerdCooking.Controllers.AccountController">
+      <Item value="ModelState" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ModelStateDictionary">
+      <Item value="AddModelError`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpRequestBase">
+      <Item value="QueryString" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NerdCooking.Models.RegistrationViewModel">
+      <Item value="UserName" priority="0" />
+      <Item value="Password" priority="1" />
+      <Item value="EmailAddress" priority="0" />
+      <Item value="PasswordConfirmation" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Security.MembershipUser">
+      <Item value="UserName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ComponentModel.DataAnnotations.ValidationContext">
+      <Item value="ObjectInstance" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ComponentModel.DataAnnotations.ValidationResult">
+      <Item value="Success" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Equals`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ComponentModel.DataAnnotations.DataType">
+      <Item value="Password" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Models/f:WorkshopRepository.cs" caret="1354" fromTop="19" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Scripts/f:modernizr-1.7.js" caret="30524" fromTop="74" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Scripts/f:jquery-ui-1.8.11.js" caret="138604" fromTop="35" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Scripts/f:jquery-1.5.1.min.js" caret="13746" fromTop="18" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Content/d:themes/d:base/f:jquery.ui.datepicker.css" caret="0" fromTop="0" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Content/d:themes/d:base/f:jquery.ui.core.css" caret="0" fromTop="0" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Content/d:themes/d:base/f:jquery.ui.base.css" caret="0" fromTop="0" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Content/d:themes/d:base/f:jquery.ui.all.css" caret="598" fromTop="16" />
+      <File id="878110A8-E31B-44E3-80D5-F58261662C9B/f:packages.config" caret="0" fromTop="0" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/f:Web.config" caret="1649" fromTop="28" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Views/d:Home/f:Index.cshtml" caret="1621" fromTop="43" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Models/f:NerdCookingContext.cs" caret="1404" fromTop="22" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/f:Global.asax.cs" caret="1182" fromTop="32" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Models/f:Workshop.cs" caret="0" fromTop="0" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Models/f:UserProfile.cs" caret="0" fromTop="0" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Views/f:Web.config" caret="0" fromTop="0" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Models/f:RegistrationViewModel.cs" caret="1255" fromTop="26" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Views/d:Account/f:Register.cshtml" caret="0" fromTop="0" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Content/f:Site.css" caret="1058" fromTop="5" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Controllers/f:WorkshopsController.cs" caret="2064" fromTop="65" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Views/d:Workshops/f:Details.cshtml" caret="0" fromTop="0" />
+      <File id="878110A8-E31B-44E3-80D5-F58261662C9B/d:Controllers/f:WorkshopsControllerFixture.cs" caret="1473" fromTop="13" />
+      <File id="878110A8-E31B-44E3-80D5-F58261662C9B/d:Models/f:WorkshopsRepositoryFixture.cs" caret="309" fromTop="8" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Views/d:Workshops/f:Create.cshtml" caret="221" fromTop="8" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/f:packages.config" caret="564" fromTop="12" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Views/d:Shared/f:_Layout.cshtml" caret="2686" fromTop="18" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Views/d:Account/f:LogOn.cshtml" caret="750" fromTop="21" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Controllers/f:AccountController.cs" caret="1181" fromTop="0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Controllers/f:AccountController.cs" caret="659" fromTop="10" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Models/f:RegistrationViewModel.cs" caret="815" fromTop="14" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Models/f:RegistrationViewModel.cs" caret="1424" fromTop="28" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Content/f:Site.css" caret="1588" fromTop="21" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Content/f:Site.css" caret="949" fromTop="15" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Content/f:Site.css" caret="1275" fromTop="30" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Content/f:Site.css" caret="1180" fromTop="23" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Content/f:Site.css" caret="1414" fromTop="31" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Views/d:Shared/f:_Layout.cshtml" caret="2050" fromTop="21" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Controllers/f:AccountController.cs" caret="2967" fromTop="31" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Views/d:Shared/f:_Layout.cshtml" caret="1189" fromTop="9" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Views/d:Shared/f:_Layout.cshtml" caret="2056" fromTop="26" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Views/d:Shared/f:_Layout.cshtml" caret="1738" fromTop="21" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Content/f:Site.css" caret="1058" fromTop="5" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Views/d:Account/f:Register.cshtml" caret="261" fromTop="8" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Models/f:RegistrationViewModel.cs" caret="884" fromTop="17" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Models/f:RegistrationViewModel.cs" caret="698" fromTop="12" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Models/f:RegistrationViewModel.cs" caret="570" fromTop="8" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Models/f:RegistrationViewModel.cs" caret="444" fromTop="4" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Models/f:RegistrationViewModel.cs" caret="1073" fromTop="22" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Controllers/f:AccountController.cs" caret="2766" fromTop="34" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Models/f:NerdCookingContext.cs" caret="1507" fromTop="31" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Views/d:Home/f:Index.cshtml" caret="1658" fromTop="23" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Views/d:Shared/f:_Layout.cshtml" caret="750" fromTop="11" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/f:Web.config" caret="4383" fromTop="25" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Views/d:Workshops/f:Create.cshtml" caret="221" fromTop="8" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Views/d:Account/f:LogOn.cshtml" caret="157" fromTop="7" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Views/d:Account/f:LogOn.cshtml" caret="626" fromTop="19" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Views/d:Shared/f:_Layout.cshtml" caret="2641" fromTop="16" />
+      <File id="DF028228-929E-45F2-B062-7AA6FE7339E6/d:Controllers/f:AccountController.cs" caret="939" fromTop="15" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

@@ -1,0 +1,180 @@
+/* Styles for basic forms
+-----------------------------------------------------------*/
+
+fieldset 
+{
+    border:1px solid #ddd;
+    padding:0 1.4em 1.4em 1.4em;
+    margin:0 0 1.5em 0;
+}
+
+legend 
+{
+    font-size:1.2em;
+    font-weight: bold;
+}
+
+textarea 
+{
+    min-height: 75px;
+}
+
+.editor-label 
+{
+    margin: 1em 0 0 0;
+}
+
+.editor-field 
+{
+    margin:0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+/* Styles for site navigation
+-----------------------------------------------------------*/
+#navigation-menu
+{
+    list-style-type: none;
+}
+
+#user-navigation-menu
+{
+    float: right;
+    list-style-type: none;
+}
+
+#user-navigation-menu li
+{
+    float: left;
+    margin-left: 0px;
+    margin-right: 8px;
+}
+
+#navigation-menu li
+{
+    margin-left: 0px;
+    margin-right: 20px;
+    float: left;
+}
+
+#navigation-menu li a
+{
+    font-size: 26px;
+    text-decoration: none;
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+}
+
+#navigation-menu li a:hover
+{
+    font-size: 26px;
+    text-decoration: none;
+}
+
+/* Styles for site elements
+-----------------------------------------------------------*/
+#navigation
+{
+    margin-top: 2em;
+}
+
+#header-content
+{
+    background-image: url(Header.jpg);
+    height: 200px;
+}
+
+#content
+{
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid #CCCCCC;
+}
+
+#content-after
+{
+    margin-top: 2em;
+}
+
+#footer
+{
+    color: #444444;
+    font-size: 10px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* Styles for workshop elements
+-----------------------------------------------------------*/
+.workshop
+{
+    margin-top: 8px;
+    display: block;
+}
+
+.workshop-date
+{
+    float: left;
+    display: block;
+    width: 90px;
+    height: 90px;
+    background-color: #BEF202;
+    text-align: center;
+    padding: 8px;
+    clear: left;
+}
+
+.workshop .workshop-date, .workshop .workshop-details
+{
+    margin-top: 20px;
+}
+
+.workshop-date-day
+{
+    font-size: 36px;
+}
+
+.workshop-details
+{
+    width: 570px;
+    margin-left: 20px;
+    float: left;
+}
+
+.workshop .workshop-details p
+{
+    margin-bottom: 0px;
+}
+
+.workshop-details-link
+{
+    float: right;
+}

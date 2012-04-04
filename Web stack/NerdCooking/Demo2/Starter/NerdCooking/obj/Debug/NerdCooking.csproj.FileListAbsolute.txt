@@ -1,0 +1,20 @@
+D:\Projects\NerdCooking\NerdCooking\bin\NerdCooking.dll
+D:\Projects\NerdCooking\NerdCooking\bin\NerdCooking.pdb
+D:\Projects\NerdCooking\NerdCooking\bin\EntityFramework.dll
+D:\Projects\NerdCooking\NerdCooking\bin\EntityFramework.xml
+D:\Projects\NerdCooking\NerdCooking\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\NerdCooking\NerdCooking\obj\Debug\NerdCooking.dll
+D:\Projects\NerdCooking\NerdCooking\obj\Debug\NerdCooking.pdb
+D:\Projects\NerdCooking\NerdCooking\bin\Elmah.dll
+D:\Projects\NerdCooking\NerdCooking\bin\Glimpse.Core.dll
+D:\Projects\NerdCooking\NerdCooking\bin\Glimpse.Mvc3.dll
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo2\Starter\NerdCooking\bin\NerdCooking.dll
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo2\Starter\NerdCooking\bin\NerdCooking.pdb
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo2\Starter\NerdCooking\bin\Elmah.dll
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo2\Starter\NerdCooking\bin\EntityFramework.dll
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo2\Starter\NerdCooking\bin\Glimpse.Core.dll
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo2\Starter\NerdCooking\bin\Glimpse.Mvc3.dll
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo2\Starter\NerdCooking\bin\EntityFramework.xml
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo2\Starter\NerdCooking\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo2\Starter\NerdCooking\obj\Debug\NerdCooking.dll
+C:\Users\Willem\Dropbox\Presentaties\Web stack\NerdCooking\Demo2\Starter\NerdCooking\obj\Debug\NerdCooking.pdb
