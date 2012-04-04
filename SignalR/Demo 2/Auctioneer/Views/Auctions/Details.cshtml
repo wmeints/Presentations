@@ -1,0 +1,79 @@
+﻿@model Auctioneer.Models.Auction
+
+@{
+    ViewBag.Title = "Auction details: " + Model.Name;
+
+    decimal highestBid = 0;
+    
+    if(Model.Bids.Count > 0) {
+        highestBid = Model.Bids.Max(bid => bid.Amount);
+    }
+}
+
+@section head {
+    <script src="@Url.Content("~/Scripts/jquery.signalR.min.js")" type="text/javascript"></script>
+    
+    <!-- 
+        This script is a .NET endpoint for SignalR. This makes the hubs available on the client through Javascript.
+        You will not find any configuration for this as that is handled through the Microsoft Web Infrastructure library
+        and a bit of intialization code in the SignalR framework.
+    -->
+    <script src="/signalr/hubs" type="text/javascript"></script>
+
+    <!-- A bit of javascript that handles the functionality on this page -->
+    <script src="@Url.Content("~/Scripts/auctioneer.js")" type="text/javascript"></script>
+}
+
+<h2>Auction details: @Model.Name</h2>
+<p>@Model.Description</p>
+<p>Highest bid: &euro; <span id="highest-bid">@highestBid</span><br />
+Auction ends: @Model.EndDate.ToShortDateString()</p>
+@if (Model.EndDate < DateTime.Now)
+{
+    if(Model.Bids.Count > 0)
+    {
+        <p>This auction has ended. Congratulations to @Model.Bids.OrderByDescending(bid => bid.Amount).First().PostedBy</p>
+    }
+    else 
+    {
+        <p>This auction did not sell in time. Too bad!</p>   
+    }
+}
+else
+{
+    if (User.Identity.IsAuthenticated)
+    {
+        <p><a href="#" id="place-bid-link">Click here</a> to place a bid now!</p>   
+        <div id="place-bid-dialog">
+            <form id="place-bid-form">
+                <div id="errormessage">
+                    
+                </div>
+                <div>
+                    <label for="amount">Amount:</label>
+                    <input type="text" name="amount" id="amount" />
+                </div>
+                <div>
+                    <input type="submit" value="Post" />
+                </div>
+            </form>
+        </div>
+    }
+}
+<h3>Placed bids</h3>
+<div id="bids">
+@foreach(var bid in Model.Bids.OrderByDescending(item => item.DatePosted))
+{
+    <div class="bid">
+        <div>@bid.PostedBy</div>
+        <div>&euro; @bid.Amount</div>
+    </div>
+}
+</div>
+
+@if (Model.Bids.Count == 0)
+{
+    <p>(No bids have been placed yet for this auction)</p>
+}
+
+<input type="hidden" name="auction-id" id="auction-id" value="@Model.Id" />

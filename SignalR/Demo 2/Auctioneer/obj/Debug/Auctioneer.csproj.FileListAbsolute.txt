@@ -1,0 +1,13 @@
+D:\Projects\SignalR\Samples\Demo02\Auctioneer\bin\Auctioneer.dll
+D:\Projects\SignalR\Samples\Demo02\Auctioneer\bin\Auctioneer.pdb
+D:\Projects\SignalR\Samples\Demo02\Auctioneer\bin\EntityFramework.dll
+D:\Projects\SignalR\Samples\Demo02\Auctioneer\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\SignalR\Samples\Demo02\Auctioneer\bin\SignalR.dll
+D:\Projects\SignalR\Samples\Demo02\Auctioneer\bin\System.Data.SqlServerCe.dll
+D:\Projects\SignalR\Samples\Demo02\Auctioneer\bin\System.Data.SqlServerCe.Entity.dll
+D:\Projects\SignalR\Samples\Demo02\Auctioneer\bin\WebActivator.dll
+D:\Projects\SignalR\Samples\Demo02\Auctioneer\bin\EntityFramework.xml
+D:\Projects\SignalR\Samples\Demo02\Auctioneer\bin\WebActivator.pdb
+D:\Projects\SignalR\Samples\Demo02\Auctioneer\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\SignalR\Samples\Demo02\Auctioneer\obj\Debug\Auctioneer.dll
+D:\Projects\SignalR\Samples\Demo02\Auctioneer\obj\Debug\Auctioneer.pdb

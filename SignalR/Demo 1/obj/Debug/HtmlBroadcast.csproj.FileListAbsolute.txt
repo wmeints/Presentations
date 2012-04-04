@@ -1,0 +1,7 @@
+C:\Users\Willem\Dropbox\Presentaties\SignalR\Demo 1\bin\HtmlBroadcast.dll
+C:\Users\Willem\Dropbox\Presentaties\SignalR\Demo 1\bin\HtmlBroadcast.pdb
+C:\Users\Willem\Dropbox\Presentaties\SignalR\Demo 1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Willem\Dropbox\Presentaties\SignalR\Demo 1\bin\SignalR.dll
+C:\Users\Willem\Dropbox\Presentaties\SignalR\Demo 1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Willem\Dropbox\Presentaties\SignalR\Demo 1\obj\Debug\HtmlBroadcast.dll
+C:\Users\Willem\Dropbox\Presentaties\SignalR\Demo 1\obj\Debug\HtmlBroadcast.pdb

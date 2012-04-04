@@ -1,0 +1,23 @@
+﻿@model Auctioneer.Models.LogOnForm
+
+@{
+    ViewBag.Title = "LogOn";
+}
+
+<h2>Please log on</h2>
+@using (var form = Html.BeginForm())
+{
+    <div>
+        <div>@Html.LabelFor(model => model.Username)</div>
+        <div>@Html.ValidationMessageFor(model => model.Username)</div>
+        <div>@Html.EditorFor(model => model.Username)</div>
+    </div>
+    <div>
+        <div>@Html.LabelFor(model => model.Password)</div>
+        <div>@Html.ValidationMessageFor(model => model.Password)</div>
+        <div>@Html.EditorFor(model => model.Password)</div>
+    </div>
+    <div>
+        <input type="submit" value="Log on" />
+    </div>
+}

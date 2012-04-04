@@ -1,0 +1,7 @@
+﻿@inherits System.Web.Mvc.WebViewPage<Auctioneer.Models.Auction>
+
+<div class="auction-item">
+    <h3>@Html.ActionLink(Model.Name,"Details",new{ controller = "Auctions", id = Model.Id })</h3>
+    <p>@Model.Description</p>
+    <p>Ends on: @Model.EndDate</p>
+</div>

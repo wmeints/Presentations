@@ -1,0 +1,12 @@
+﻿@model List<Auctioneer.Models.Auction>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Running auctions</h2>
+<p>@Html.ActionLink("Start a new auction","Create", new { controller = "Auctions" })</p>
+@for(int index = 0; index < Model.Count; index++)
+{
+    @Html.DisplayFor(model => model[index]);    
+}

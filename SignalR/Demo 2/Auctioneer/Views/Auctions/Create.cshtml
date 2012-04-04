@@ -1,0 +1,31 @@
+﻿@model Auctioneer.Models.CreateAuctionForm
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Start a new auction</h2>
+@using (var form = Html.BeginForm())
+{
+    <div>
+        <div>@Html.LabelFor(model => model.Name)</div>
+        <div>@Html.ValidationMessageFor(model => model.Name)</div>
+        <div>@Html.EditorFor(model => model.Name)</div>
+    </div>
+    
+    <div>
+        <div>@Html.LabelFor(model => model.Description)</div>
+        <div>@Html.ValidationMessageFor(model => model.Description)</div>
+        <div>@Html.EditorFor(model => model.Description)</div>
+    </div>
+    
+    <div>
+        <div>@Html.LabelFor(model => model.EndDate)</div>
+        <div>@Html.ValidationMessageFor(model => model.EndDate)</div>
+        <div>@Html.EditorFor(model => model.EndDate)</div>
+    </div>
+    
+    <div>
+        <input type="submit" value="Create" />
+    </div>
+}
