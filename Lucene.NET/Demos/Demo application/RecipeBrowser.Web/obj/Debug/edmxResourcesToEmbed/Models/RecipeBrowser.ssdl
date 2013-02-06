@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RecipeBrowserModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="RecipeBrowserModelStoreContainer">
+    <EntitySet Name="Category" EntityType="RecipeBrowserModel.Store.Category" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Comment" EntityType="RecipeBrowserModel.Store.Comment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ingredient" EntityType="RecipeBrowserModel.Store.Ingredient" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Recipe" EntityType="RecipeBrowserModel.Store.Recipe" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RecipeCategory" EntityType="RecipeBrowserModel.Store.RecipeCategory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Unit" EntityType="RecipeBrowserModel.Store.Unit" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Comment_Recipe" Association="RecipeBrowserModel.Store.FK_Comment_Recipe">
+      <End Role="Recipe" EntitySet="Recipe" />
+      <End Role="Comment" EntitySet="Comment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ingredient_Recipe" Association="RecipeBrowserModel.Store.FK_Ingredient_Recipe">
+      <End Role="Recipe" EntitySet="Recipe" />
+      <End Role="Ingredient" EntitySet="Ingredient" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ingredient_Unit" Association="RecipeBrowserModel.Store.FK_Ingredient_Unit">
+      <End Role="Unit" EntitySet="Unit" />
+      <End Role="Ingredient" EntitySet="Ingredient" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RecipeCategory_Category" Association="RecipeBrowserModel.Store.FK_RecipeCategory_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="RecipeCategory" EntitySet="RecipeCategory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RecipeCategory_Recipe" Association="RecipeBrowserModel.Store.FK_RecipeCategory_Recipe">
+      <End Role="Recipe" EntitySet="Recipe" />
+      <End Role="RecipeCategory" EntitySet="RecipeCategory" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="CategoryId" Type="decimal" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Image" Type="varbinary(max)" />
+    <Property Name="IsMenuCourse" Type="bit" Nullable="false" />
+    <Property Name="IsKitchenType" Type="bit" Nullable="false" />
+    <Property Name="IsCookingTechnique" Type="bit" Nullable="false" />
+    <Property Name="IsTheme" Type="bit" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="DateModified" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Version" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="CommentId" />
+    </Key>
+    <Property Name="CommentId" Type="decimal" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RecipeId" Type="decimal" Nullable="false" />
+    <Property Name="CommentText" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="DateModified" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Version" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Ingredient">
+    <Key>
+      <PropertyRef Name="IngredientId" />
+    </Key>
+    <Property Name="IngredientId" Type="decimal" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RecipeId" Type="decimal" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Amount" Type="decimal" />
+    <Property Name="UnitId" Type="decimal" />
+    <Property Name="Version" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Recipe">
+    <Key>
+      <PropertyRef Name="RecipeId" />
+    </Key>
+    <Property Name="RecipeId" Type="decimal" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Image" Type="varbinary" MaxLength="50" />
+    <Property Name="Rating" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="CookingInstructions" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TimeNeeded" Type="time" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="DateModified" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Version" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="RecipeCategory">
+    <Key>
+      <PropertyRef Name="RecipeId" />
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="RecipeId" Type="decimal" Nullable="false" />
+    <Property Name="CategoryId" Type="decimal" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Unit">
+    <Key>
+      <PropertyRef Name="UnitId" />
+    </Key>
+    <Property Name="UnitId" Type="decimal" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="DateModified" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Version" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <Association Name="FK_Comment_Recipe">
+    <End Role="Recipe" Type="RecipeBrowserModel.Store.Recipe" Multiplicity="1" />
+    <End Role="Comment" Type="RecipeBrowserModel.Store.Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Recipe">
+        <PropertyRef Name="RecipeId" />
+      </Principal>
+      <Dependent Role="Comment">
+        <PropertyRef Name="RecipeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ingredient_Recipe">
+    <End Role="Recipe" Type="RecipeBrowserModel.Store.Recipe" Multiplicity="1" />
+    <End Role="Ingredient" Type="RecipeBrowserModel.Store.Ingredient" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Recipe">
+        <PropertyRef Name="RecipeId" />
+      </Principal>
+      <Dependent Role="Ingredient">
+        <PropertyRef Name="RecipeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ingredient_Unit">
+    <End Role="Unit" Type="RecipeBrowserModel.Store.Unit" Multiplicity="0..1" />
+    <End Role="Ingredient" Type="RecipeBrowserModel.Store.Ingredient" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Unit">
+        <PropertyRef Name="UnitId" />
+      </Principal>
+      <Dependent Role="Ingredient">
+        <PropertyRef Name="UnitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RecipeCategory_Category">
+    <End Role="Category" Type="RecipeBrowserModel.Store.Category" Multiplicity="1" />
+    <End Role="RecipeCategory" Type="RecipeBrowserModel.Store.RecipeCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="RecipeCategory">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RecipeCategory_Recipe">
+    <End Role="Recipe" Type="RecipeBrowserModel.Store.Recipe" Multiplicity="1" />
+    <End Role="RecipeCategory" Type="RecipeBrowserModel.Store.RecipeCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Recipe">
+        <PropertyRef Name="RecipeId" />
+      </Principal>
+      <Dependent Role="RecipeCategory">
+        <PropertyRef Name="RecipeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,18 @@
+D:\Projects\SpanQuerySamples\SpanQuerySamples\bin\Debug\SpanQuerySamples.dll
+D:\Projects\SpanQuerySamples\SpanQuerySamples\bin\Debug\SpanQuerySamples.pdb
+D:\Projects\SpanQuerySamples\SpanQuerySamples\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Projects\SpanQuerySamples\SpanQuerySamples\bin\Debug\Lucene.Net.dll
+D:\Projects\SpanQuerySamples\SpanQuerySamples\bin\Debug\Lucene.Net.pdb
+D:\Projects\SpanQuerySamples\SpanQuerySamples\bin\Debug\Lucene.Net.xml
+D:\Projects\SpanQuerySamples\SpanQuerySamples\obj\Debug\SpanQuerySamples.csprojResolveAssemblyReference.cache
+D:\Projects\SpanQuerySamples\SpanQuerySamples\obj\Debug\SpanQuerySamples.dll
+D:\Projects\SpanQuerySamples\SpanQuerySamples\obj\Debug\SpanQuerySamples.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 3 - SpanQueries\SpanQuerySamples\bin\Debug\SpanQuerySamples.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 3 - SpanQueries\SpanQuerySamples\bin\Debug\SpanQuerySamples.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 3 - SpanQueries\SpanQuerySamples\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 3 - SpanQueries\SpanQuerySamples\bin\Debug\Lucene.Net.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 3 - SpanQueries\SpanQuerySamples\bin\Debug\Lucene.Net.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 3 - SpanQueries\SpanQuerySamples\bin\Debug\Lucene.Net.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 3 - SpanQueries\SpanQuerySamples\obj\Debug\SpanQuerySamples.csprojResolveAssemblyReference.cache
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 3 - SpanQueries\SpanQuerySamples\obj\Debug\SpanQuerySamples.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 3 - SpanQueries\SpanQuerySamples\obj\Debug\SpanQuerySamples.pdb

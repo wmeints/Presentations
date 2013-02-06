@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>StemmersNet</id>
+    <version>1.1.0.0</version>
+    <title>StemmersNet</title>
+    <authors>Iveonik Systems (www.iveonik.com)</authors>
+    <owners>Iveonik Systems (www.iveonik.com)</owners>
+    <projectUrl>https://stemmersnet.codeplex.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Porting of snowballs stemmers to .NET Framework</description>
+    <copyright>© Iveonik Systems, 2011-2012</copyright>
+    <tags>Stem Stemmer Snowball</tags>
+    <references>
+      <reference file="StemmersNet.dll" />
+    </references>
+  </metadata>
+</package>

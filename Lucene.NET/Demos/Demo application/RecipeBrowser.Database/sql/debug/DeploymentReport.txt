@@ -1,0 +1,26 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Category] (Table)
+       [dbo].[Comment] (Table)
+       [dbo].[Ingredient] (Table)
+       [dbo].[Ingredient].[IX_Ingredient_RecipeId] (Index)
+       [dbo].[Recipe] (Table)
+       [dbo].[RecipeCategory] (Table)
+       [dbo].[Unit] (Table)
+       [dbo].[FK_Comment_Recipe] (Foreign Key)
+       [dbo].[FK_Ingredient_Recipe] (Foreign Key)
+       [dbo].[FK_Ingredient_Unit] (Foreign Key)
+       [dbo].[FK_RecipeCategory_Category] (Foreign Key)
+       [dbo].[FK_RecipeCategory_Recipe] (Foreign Key)
+
+** Supporting actions

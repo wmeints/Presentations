@@ -1,0 +1,117 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe browser Lucene.NET sample</title>
+    <link href="Styles/Website.min.css" rel="stylesheet" />
+    @Scripts.Render("~/Application/Scripts")
+</head>
+<body>
+    <div class="container_12">
+        <div class="row">
+            <div class="grid_12">
+                <h1>Recipe browser Lucene.NET sample</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid_12">
+                <ul class="nav" id="shellnavigation">
+                    <li><a href="#/home">Home</a></li>
+                    <li><a href="#/categories">Browse categories</a></li>
+                    <li><a href="#/search">Search recipes</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container_12" id="module-content">
+        <!-- Home view -->
+        <div class="view" id="view-home">
+            <h2>Recently added recipes</h2>
+            <ul data-bind="template: { name: 'recipe-summary-template', foreach: recipes}">
+            </ul>
+        </div>    
+        
+        <!-- Not found view -->
+        <div class="view" id="view-notfound">
+            <h2>Sorry, we couldn't find what you were looking for</h2>
+            <p>Maybe try searching for it?</p>
+        </div>
+        
+        <!-- Recipe details view -->
+        <div class="view" id="view-recipe">
+            <div class="grid_8">
+                <h2 data-bind="text: recipe().Name"></h2>
+                <p data-bind="text: recipe().Description"></p>
+                <p><span>Time needed: </span><span data-bind="text: recipe().TimeNeeded"></span></p>
+                <h3>Ingredients</h3>
+                <ul data-bind="foreach: ingredients">
+                    <li>
+                        <span data-bind="text: Amount"></span>
+                        <span data-bind="text: Unit"></span>
+                        <span data-bind="text: Name"></span>
+                    </li>
+                </ul>
+            
+                <h3>Cooking instructions</h3>
+                <p data-bind="text: recipe().CookingInstructions"></p>
+            </div>
+            
+            <div class="grid_4">
+                <h3>Related recipes</h3>
+                <ul data-bind="template: { name: 'recipe-summary-template', foreach: relatedRecipes}">
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Categories view -->
+        <div class="view" id="view-categories">
+            <h2>Available categories</h2>
+            <ul data-bind="foreach: categories">
+                <li>
+                    <a data-bind="text: Name, attr: { href: '#/categories/' + Id() }"></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Recipe category view -->
+        <div class="view" id="view-category">
+            <h2 data-bind="text: category().Name"></h2>
+            <ul data-bind="template: { name: 'recipe-summary-template', foreach: recipes}">
+            </ul>
+        </div>
+        
+        <!-- Search view -->
+        <div class="view" id="view-search">
+            <h2>Search for recipes</h2>
+            <div>
+                <input type="text" data-bind="value: searchQuery, valueUpdate: 'keyup'" size="100"/>
+                <button data-bind="click: search">Search</button>
+            </div>
+            <ul data-bind="template: { name: 'recipe-summary-template', foreach: recipes}">
+                
+            </ul>
+        </div>
+    </div>
+    <div class="overlay" id="busy-indicator">
+        <div class="container">
+            <div class="row">
+                <div class="span12 center">
+                    <img src="~/Images/ajax-loader.gif" width="80" height="80"/>
+                    <h3>Loading data...</h3>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script type="text/html" id="recipe-summary-template">
+        <li>
+            <h3><a data-bind="text: Name, attr: { href: '#/recipes/' + Id() }"></a></h3>
+            <p data-bind="text: Description"></p>
+        </li>
+    </script>
+    <script type="text/html" id="ingredient-template">
+        
+    </script>
+</body>
+</html>

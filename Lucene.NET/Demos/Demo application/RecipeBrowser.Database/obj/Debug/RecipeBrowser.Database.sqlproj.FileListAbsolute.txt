@@ -1,0 +1,10 @@
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Database\sql\debug\RecipeBrowser.Database.dacpac
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Database\sql\debug\
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Database\sql\debug\RecipeBrowser.Database.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Database\sql\debug\RecipeBrowser.Database.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Database\obj\Debug\Model.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Database\obj\Debug\refactor.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Database\obj\Debug\postdeploy.sql
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Database\obj\Debug\predeploy.sql
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Database\obj\Debug\RecipeBrowser.Database.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Database\obj\Debug\RecipeBrowser.Database.pdb

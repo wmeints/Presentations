@@ -1,0 +1,40 @@
+C:\Users\Willem\Dropbox\Presentaties\RIA Services\Demo\Demo01 - Introduction\Step 3\Sources\RecipeBrowser.Web\bin\RecipeBrowser.Web.dll
+C:\Users\Willem\Dropbox\Presentaties\RIA Services\Demo\Demo01 - Introduction\Step 3\Sources\RecipeBrowser.Web\bin\RecipeBrowser.Web.pdb
+C:\Users\Willem\Dropbox\Presentaties\RIA Services\Demo\Demo01 - Introduction\Step 3\Sources\RecipeBrowser.Web\obj\Debug\RecipeBrowser.Web.csprojResolveAssemblyReference.cache
+C:\Users\Willem\Dropbox\Presentaties\RIA Services\Demo\Demo01 - Introduction\Step 3\Sources\RecipeBrowser.Web\obj\Debug\RecipeBrowser.Web.Resources.ErrorExplanations.resources
+C:\Users\Willem\Dropbox\Presentaties\RIA Services\Demo\Demo01 - Introduction\Step 3\Sources\RecipeBrowser.Web\obj\Debug\RecipeBrowser.Web.Resources.ErrorMessages.resources
+C:\Users\Willem\Dropbox\Presentaties\RIA Services\Demo\Demo01 - Introduction\Step 3\Sources\RecipeBrowser.Web\obj\Debug\RecipeBrowser.Web.csproj.GenerateResource.Cache
+C:\Users\Willem\Dropbox\Presentaties\RIA Services\Demo\Demo01 - Introduction\Step 3\Sources\RecipeBrowser.Web\obj\Debug\RecipeBrowser.Web.dll
+C:\Users\Willem\Dropbox\Presentaties\RIA Services\Demo\Demo01 - Introduction\Step 3\Sources\RecipeBrowser.Web\obj\Debug\RecipeBrowser.Web.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\RecipeBrowser.Web.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\RecipeBrowser.Web.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\Antlr3.Runtime.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\BundleTransformer.Core.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\Lucene.Net.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\Newtonsoft.Json.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\System.Net.Http.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\System.Net.Http.Formatting.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\System.Net.Http.WebRequest.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\System.Web.Http.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\System.Web.Http.WebHost.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\System.Web.Optimization.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\System.Web.Razor.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\WebGrease.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\Lucene.Net.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\Lucene.Net.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\Newtonsoft.Json.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\System.Net.Http.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\System.Net.Http.Formatting.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\System.Net.Http.WebRequest.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\System.Web.Http.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\System.Web.Http.WebHost.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\System.Web.Razor.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\bin\ru-ru\BundleTransformer.Core.resources.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\obj\Debug\RecipeBrowser.Web.csprojResolveAssemblyReference.cache
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\obj\Debug\RecipeBrowser.Web.Resources.ErrorExplanations.resources
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\obj\Debug\RecipeBrowser.Web.Resources.ErrorMessages.resources
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\obj\Debug\RecipeBrowser.Web.csproj.GenerateResource.Cache
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\obj\Debug\RecipeBrowser.Web.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.Web\obj\Debug\RecipeBrowser.Web.pdb

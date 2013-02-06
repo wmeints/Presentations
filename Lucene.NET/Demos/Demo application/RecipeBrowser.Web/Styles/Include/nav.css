@@ -1,0 +1,15 @@
+﻿ul.nav {
+  list-style-type: none;
+  padding-left: 0px;
+}
+ul.nav li {
+  float: left;
+  margin-left: 0px;
+}
+ul.nav li a {
+  display: inline-block;
+  margin-right: 20px;
+}
+ul.nav li a.active {
+  font-weight: bold;
+}

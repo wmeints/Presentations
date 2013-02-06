@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>CavemanTools</id>
+    <version>1.6.1</version>
+    <authors>Mihai Mogosanu</authors>
+    <owners>Mihai Mogosanu</owners>
+    <licenseUrl>http://cavemantools.codeplex.com/license</licenseUrl>
+    <projectUrl>https://bitbucket.org/sapiensworks/caveman-tools/wiki/CTools</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Evolved toolkit for developing applications faster and with less code, written in C# on .Net 4.0 using best practices.  Provides ready to use sub-systems such as: Common Logging, Common DI support, Right-Based Authorization tools for multi tenant web applications. Includes general purpose extension methods, assertions, predefined value objects (Email, Percentage etc) and specialized helper classes for specific tasks.</description>
+    <summary>Evolved toolkit for developing applications faster and with less code, written in C# on .Net 4.0 using best practices. Includes general purpose extension methods and provides ready to use sub-systems such as: Common Logging, Right-Based Authorization tools for multi tenant web applications.</summary>
+    <language>en-US</language>
+    <tags>toolkit, library, tools, utility, lcg, reflection, multi-tenant, tenant, authorization, assert, contracts, helper</tags>
+    <references>
+      <reference file="CavemanTools.dll" />
+    </references>
+  </metadata>
+</package>

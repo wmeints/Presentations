@@ -1,0 +1,16 @@
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.IndexBuilder\bin\Debug\RecipeBrowser.IndexBuilder.exe.config
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.IndexBuilder\bin\Debug\RecipeBrowser.IndexBuilder.exe
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.IndexBuilder\bin\Debug\RecipeBrowser.IndexBuilder.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.IndexBuilder\bin\Debug\CavemanTools.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.IndexBuilder\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.IndexBuilder\bin\Debug\Lucene.Net.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.IndexBuilder\bin\Debug\SqlFu.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.IndexBuilder\bin\Debug\CavemanTools.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.IndexBuilder\bin\Debug\CavemanTools.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.IndexBuilder\bin\Debug\Lucene.Net.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.IndexBuilder\bin\Debug\Lucene.Net.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.IndexBuilder\bin\Debug\SqlFu.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.IndexBuilder\bin\Debug\SqlFu.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.IndexBuilder\obj\Debug\RecipeBrowser.IndexBuilder.csprojResolveAssemblyReference.cache
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.IndexBuilder\obj\Debug\RecipeBrowser.IndexBuilder.exe
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Completed version\RecipeBrowser.IndexBuilder\obj\Debug\RecipeBrowser.IndexBuilder.pdb

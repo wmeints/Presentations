@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="RecipeBrowserModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="RecipeBrowserModelStoreContainer">
+          <EntitySet Name="Category" EntityType="RecipeBrowserModel.Store.Category" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Comment" EntityType="RecipeBrowserModel.Store.Comment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Ingredient" EntityType="RecipeBrowserModel.Store.Ingredient" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Recipe" EntityType="RecipeBrowserModel.Store.Recipe" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RecipeCategory" EntityType="RecipeBrowserModel.Store.RecipeCategory" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Unit" EntityType="RecipeBrowserModel.Store.Unit" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Comment_Recipe" Association="RecipeBrowserModel.Store.FK_Comment_Recipe">
+            <End Role="Recipe" EntitySet="Recipe" />
+            <End Role="Comment" EntitySet="Comment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Ingredient_Recipe" Association="RecipeBrowserModel.Store.FK_Ingredient_Recipe">
+            <End Role="Recipe" EntitySet="Recipe" />
+            <End Role="Ingredient" EntitySet="Ingredient" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Ingredient_Unit" Association="RecipeBrowserModel.Store.FK_Ingredient_Unit">
+            <End Role="Unit" EntitySet="Unit" />
+            <End Role="Ingredient" EntitySet="Ingredient" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RecipeCategory_Category" Association="RecipeBrowserModel.Store.FK_RecipeCategory_Category">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="RecipeCategory" EntitySet="RecipeCategory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RecipeCategory_Recipe" Association="RecipeBrowserModel.Store.FK_RecipeCategory_Recipe">
+            <End Role="Recipe" EntitySet="Recipe" />
+            <End Role="RecipeCategory" EntitySet="RecipeCategory" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="CategoryId" />
+          </Key>
+          <Property Name="CategoryId" Type="decimal" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Image" Type="varbinary(max)" />
+          <Property Name="IsMenuCourse" Type="bit" Nullable="false" />
+          <Property Name="IsKitchenType" Type="bit" Nullable="false" />
+          <Property Name="IsCookingTechnique" Type="bit" Nullable="false" />
+          <Property Name="IsTheme" Type="bit" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="Version" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="Comment">
+          <Key>
+            <PropertyRef Name="CommentId" />
+          </Key>
+          <Property Name="CommentId" Type="decimal" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="RecipeId" Type="decimal" Nullable="false" />
+          <Property Name="CommentText" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="Version" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="Ingredient">
+          <Key>
+            <PropertyRef Name="IngredientId" />
+          </Key>
+          <Property Name="IngredientId" Type="decimal" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="RecipeId" Type="decimal" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="250" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="Amount" Type="decimal" />
+          <Property Name="UnitId" Type="decimal" />
+          <Property Name="Version" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="Recipe">
+          <Key>
+            <PropertyRef Name="RecipeId" />
+          </Key>
+          <Property Name="RecipeId" Type="decimal" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="250" />
+          <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Image" Type="varbinary" MaxLength="50" />
+          <Property Name="Rating" Type="decimal" Nullable="false" Scale="2" />
+          <Property Name="CookingInstructions" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="TimeNeeded" Type="time" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="Version" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="RecipeCategory">
+          <Key>
+            <PropertyRef Name="RecipeId" />
+            <PropertyRef Name="CategoryId" />
+          </Key>
+          <Property Name="RecipeId" Type="decimal" Nullable="false" />
+          <Property Name="CategoryId" Type="decimal" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Unit">
+          <Key>
+            <PropertyRef Name="UnitId" />
+          </Key>
+          <Property Name="UnitId" Type="decimal" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="250" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" />
+          <Property Name="CreatedBy" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="Version" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <Association Name="FK_Comment_Recipe">
+          <End Role="Recipe" Type="RecipeBrowserModel.Store.Recipe" Multiplicity="1" />
+          <End Role="Comment" Type="RecipeBrowserModel.Store.Comment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Recipe">
+              <PropertyRef Name="RecipeId" />
+            </Principal>
+            <Dependent Role="Comment">
+              <PropertyRef Name="RecipeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Ingredient_Recipe">
+          <End Role="Recipe" Type="RecipeBrowserModel.Store.Recipe" Multiplicity="1" />
+          <End Role="Ingredient" Type="RecipeBrowserModel.Store.Ingredient" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Recipe">
+              <PropertyRef Name="RecipeId" />
+            </Principal>
+            <Dependent Role="Ingredient">
+              <PropertyRef Name="RecipeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Ingredient_Unit">
+          <End Role="Unit" Type="RecipeBrowserModel.Store.Unit" Multiplicity="0..1" />
+          <End Role="Ingredient" Type="RecipeBrowserModel.Store.Ingredient" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Unit">
+              <PropertyRef Name="UnitId" />
+            </Principal>
+            <Dependent Role="Ingredient">
+              <PropertyRef Name="UnitId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RecipeCategory_Category">
+          <End Role="Category" Type="RecipeBrowserModel.Store.Category" Multiplicity="1" />
+          <End Role="RecipeCategory" Type="RecipeBrowserModel.Store.RecipeCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="CategoryId" />
+            </Principal>
+            <Dependent Role="RecipeCategory">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RecipeCategory_Recipe">
+          <End Role="Recipe" Type="RecipeBrowserModel.Store.Recipe" Multiplicity="1" />
+          <End Role="RecipeCategory" Type="RecipeBrowserModel.Store.RecipeCategory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Recipe">
+              <PropertyRef Name="RecipeId" />
+            </Principal>
+            <Dependent Role="RecipeCategory">
+              <PropertyRef Name="RecipeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RecipeBrowserModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="RecipeBrowserEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Categories" EntityType="RecipeBrowserModel.Category" />
+          <EntitySet Name="Comments" EntityType="RecipeBrowserModel.Comment" />
+          <EntitySet Name="Ingredients" EntityType="RecipeBrowserModel.Ingredient" />
+          <EntitySet Name="Recipes" EntityType="RecipeBrowserModel.Recipe" />
+          <EntitySet Name="Units" EntityType="RecipeBrowserModel.Unit" />
+          <AssociationSet Name="FK_Comment_Recipe" Association="RecipeBrowserModel.FK_Comment_Recipe">
+            <End Role="Recipe" EntitySet="Recipes" />
+            <End Role="Comment" EntitySet="Comments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Ingredient_Recipe" Association="RecipeBrowserModel.FK_Ingredient_Recipe">
+            <End Role="Recipe" EntitySet="Recipes" />
+            <End Role="Ingredient" EntitySet="Ingredients" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Ingredient_Unit" Association="RecipeBrowserModel.FK_Ingredient_Unit">
+            <End Role="Unit" EntitySet="Units" />
+            <End Role="Ingredient" EntitySet="Ingredients" />
+          </AssociationSet>
+          <AssociationSet Name="RecipeCategory" Association="RecipeBrowserModel.RecipeCategory">
+            <End Role="Category" EntitySet="Categories" />
+            <End Role="Recipe" EntitySet="Recipes" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="CategoryId" />
+          </Key>
+          <Property Name="CategoryId" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IsMenuCourse" Type="Boolean" Nullable="false" />
+          <Property Name="IsKitchenType" Type="Boolean" Nullable="false" />
+          <Property Name="IsCookingTechnique" Type="Boolean" Nullable="false" />
+          <Property Name="IsTheme" Type="Boolean" Nullable="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="DateModified" Type="DateTime" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Version" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" ConcurrencyMode="Fixed" />
+          <NavigationProperty Name="Recipes" Relationship="RecipeBrowserModel.RecipeCategory" FromRole="Category" ToRole="Recipe" />
+          <Property Type="Binary" Name="Image" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Comment">
+          <Key>
+            <PropertyRef Name="CommentId" />
+          </Key>
+          <Property Name="CommentId" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RecipeId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="CommentText" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="DateModified" Type="DateTime" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Version" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" ConcurrencyMode="Fixed" />
+          <NavigationProperty Name="Recipe" Relationship="RecipeBrowserModel.FK_Comment_Recipe" FromRole="Comment" ToRole="Recipe" />
+        </EntityType>
+        <EntityType Name="Ingredient">
+          <Key>
+            <PropertyRef Name="IngredientId" />
+          </Key>
+          <Property Name="IngredientId" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RecipeId" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Amount" Type="Decimal" Nullable="true" Precision="18" Scale="0" />
+          <Property Name="UnitId" Type="Decimal" Precision="18" Scale="0" Nullable="true" />
+          <Property Name="Version" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" ConcurrencyMode="Fixed" />
+          <NavigationProperty Name="Recipe" Relationship="RecipeBrowserModel.FK_Ingredient_Recipe" FromRole="Ingredient" ToRole="Recipe" />
+          <NavigationProperty Name="Unit" Relationship="RecipeBrowserModel.FK_Ingredient_Unit" FromRole="Ingredient" ToRole="Unit" />
+        </EntityType>
+        <EntityType Name="Recipe">
+          <Key>
+            <PropertyRef Name="RecipeId" />
+          </Key>
+          <Property Name="RecipeId" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="CookingInstructions" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="TimeNeeded" Type="Time" Nullable="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="DateModified" Type="DateTime" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Version" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" ConcurrencyMode="Fixed" />
+          <NavigationProperty Name="Comments" Relationship="RecipeBrowserModel.FK_Comment_Recipe" FromRole="Recipe" ToRole="Comment" />
+          <NavigationProperty Name="Ingredients" Relationship="RecipeBrowserModel.FK_Ingredient_Recipe" FromRole="Recipe" ToRole="Ingredient" />
+          <NavigationProperty Name="Categories" Relationship="RecipeBrowserModel.RecipeCategory" FromRole="Recipe" ToRole="Category" />
+          <Property Type="Binary" Name="Image" MaxLength="50" FixedLength="false" />
+          <Property Type="Decimal" Name="Rating" Nullable="false" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="Unit">
+          <Key>
+            <PropertyRef Name="UnitId" />
+          </Key>
+          <Property Name="UnitId" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="DateModified" Type="DateTime" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Version" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" ConcurrencyMode="Fixed" />
+          <NavigationProperty Name="Ingredients" Relationship="RecipeBrowserModel.FK_Ingredient_Unit" FromRole="Unit" ToRole="Ingredient" />
+        </EntityType>
+        <Association Name="FK_Comment_Recipe">
+          <End Role="Recipe" Type="RecipeBrowserModel.Recipe" Multiplicity="1" />
+          <End Role="Comment" Type="RecipeBrowserModel.Comment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Recipe">
+              <PropertyRef Name="RecipeId" />
+            </Principal>
+            <Dependent Role="Comment">
+              <PropertyRef Name="RecipeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Ingredient_Recipe">
+          <End Role="Recipe" Type="RecipeBrowserModel.Recipe" Multiplicity="1" />
+          <End Role="Ingredient" Type="RecipeBrowserModel.Ingredient" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Recipe">
+              <PropertyRef Name="RecipeId" />
+            </Principal>
+            <Dependent Role="Ingredient">
+              <PropertyRef Name="RecipeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Ingredient_Unit">
+          <End Role="Unit" Type="RecipeBrowserModel.Unit" Multiplicity="0..1" />
+          <End Role="Ingredient" Type="RecipeBrowserModel.Ingredient" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Unit">
+              <PropertyRef Name="UnitId" />
+            </Principal>
+            <Dependent Role="Ingredient">
+              <PropertyRef Name="UnitId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RecipeCategory">
+          <End Role="Category" Type="RecipeBrowserModel.Category" Multiplicity="*" />
+          <End Role="Recipe" Type="RecipeBrowserModel.Recipe" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RecipeBrowserModelStoreContainer" CdmEntityContainer="RecipeBrowserEntities">
+          <EntitySetMapping Name="Categories"><EntityTypeMapping TypeName="RecipeBrowserModel.Category"><MappingFragment StoreEntitySet="Category">
+            <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="IsMenuCourse" ColumnName="IsMenuCourse" />
+            <ScalarProperty Name="IsKitchenType" ColumnName="IsKitchenType" />
+            <ScalarProperty Name="IsCookingTechnique" ColumnName="IsCookingTechnique" />
+            <ScalarProperty Name="IsTheme" ColumnName="IsTheme" />
+            <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+            <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+            <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+            <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Comments"><EntityTypeMapping TypeName="RecipeBrowserModel.Comment"><MappingFragment StoreEntitySet="Comment">
+            <ScalarProperty Name="CommentId" ColumnName="CommentId" />
+            <ScalarProperty Name="RecipeId" ColumnName="RecipeId" />
+            <ScalarProperty Name="CommentText" ColumnName="CommentText" />
+            <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+            <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+            <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+            <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Ingredients"><EntityTypeMapping TypeName="RecipeBrowserModel.Ingredient"><MappingFragment StoreEntitySet="Ingredient">
+            <ScalarProperty Name="IngredientId" ColumnName="IngredientId" />
+            <ScalarProperty Name="RecipeId" ColumnName="RecipeId" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="Amount" ColumnName="Amount" />
+            <ScalarProperty Name="UnitId" ColumnName="UnitId" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Recipes"><EntityTypeMapping TypeName="RecipeBrowserModel.Recipe"><MappingFragment StoreEntitySet="Recipe">
+            <ScalarProperty Name="Rating" ColumnName="Rating" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="RecipeId" ColumnName="RecipeId" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="CookingInstructions" ColumnName="CookingInstructions" />
+            <ScalarProperty Name="TimeNeeded" ColumnName="TimeNeeded" />
+            <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+            <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+            <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+            <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Units"><EntityTypeMapping TypeName="RecipeBrowserModel.Unit"><MappingFragment StoreEntitySet="Unit">
+            <ScalarProperty Name="UnitId" ColumnName="UnitId" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+            <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+            <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+            <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <AssociationSetMapping Name="RecipeCategory" TypeName="RecipeBrowserModel.RecipeCategory" StoreEntitySet="RecipeCategory">
+            <EndProperty Name="Category">
+              <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+            </EndProperty>
+            <EndProperty Name="Recipe">
+              <ScalarProperty Name="RecipeId" ColumnName="RecipeId" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="RecipeBrowser">
+        <EntityTypeShape EntityType="RecipeBrowserModel.Category" Width="1.5" PointX="0.5" PointY="0.625" Height="3.5186979166666656" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecipeBrowserModel.Comment" Width="1.5" PointX="5.25" PointY="0.875" Height="2.7494921874999996" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecipeBrowserModel.Ingredient" Width="1.5" PointX="2.75" PointY="5.375" Height="2.7494921874999996" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecipeBrowserModel.Recipe" Width="1.5" PointX="2.75" PointY="0.5" Height="3.5186979166666656" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecipeBrowserModel.Unit" Width="1.5" PointX="5.25" PointY="5" Height="2.5571907552083317" IsExpanded="true" />
+        <AssociationConnector Association="RecipeBrowserModel.FK_Comment_Recipe" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.25" PointY="2.24974609375" />
+          <ConnectorPoint PointX="5.25" PointY="2.24974609375" />
+        </AssociationConnector>
+        <AssociationConnector Association="RecipeBrowserModel.FK_Ingredient_Recipe" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.5" PointY="4.40330078125" />
+          <ConnectorPoint PointX="3.5" PointY="5.375" />
+        </AssociationConnector>
+        <AssociationConnector Association="RecipeBrowserModel.FK_Ingredient_Unit" ManuallyRouted="false">
+          <ConnectorPoint PointX="5.25" PointY="6.4660953776041659" />
+          <ConnectorPoint PointX="4.25" PointY="6.4660953776041659" />
+        </AssociationConnector>
+        <AssociationConnector Association="RecipeBrowserModel.RecipeCategory" ManuallyRouted="false">
+          <ConnectorPoint PointX="2" PointY="2.3843489583333328" />
+          <ConnectorPoint PointX="2.75" PointY="2.3843489583333328" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

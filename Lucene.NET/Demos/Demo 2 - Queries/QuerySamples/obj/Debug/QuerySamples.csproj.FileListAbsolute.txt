@@ -1,0 +1,94 @@
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\QuerySamples.dll.config
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\QuerySamples.dll
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\QuerySamples.pdb
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\CavemanTools.dll
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.dll
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\SqlFu.dll
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\CavemanTools.pdb
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\CavemanTools.xml
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.pdb
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.xml
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\SqlFu.pdb
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\SqlFu.xml
+D:\Projects\QuerySamples\QuerySamples\obj\Debug\QuerySamples.csprojResolveAssemblyReference.cache
+D:\Projects\QuerySamples\QuerySamples\obj\Debug\QuerySamples.dll
+D:\Projects\QuerySamples\QuerySamples\obj\Debug\QuerySamples.pdb
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Analyzers.dll
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Core.dll
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.FastVectorHighlighter.dll
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Highlighter.dll
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Memory.dll
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Queries.dll
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Regex.dll
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.SimpleFacetedSearch.dll
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Snowball.dll
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.SpellChecker.dll
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\StemmersNet.dll
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Analyzers.pdb
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Analyzers.xml
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Core.pdb
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Core.xml
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.FastVectorHighlighter.pdb
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.FastVectorHighlighter.xml
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Highlighter.pdb
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Highlighter.xml
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Memory.pdb
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Memory.xml
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Queries.pdb
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Queries.xml
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Regex.pdb
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Regex.xml
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.SimpleFacetedSearch.pdb
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.SimpleFacetedSearch.xml
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Snowball.pdb
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.Snowball.xml
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.SpellChecker.pdb
+D:\Projects\QuerySamples\QuerySamples\bin\Debug\Lucene.Net.Contrib.SpellChecker.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\QuerySamples.dll.config
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\QuerySamples.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\QuerySamples.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\CavemanTools.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Analyzers.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Core.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.FastVectorHighlighter.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Highlighter.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Memory.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Queries.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Regex.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.SimpleFacetedSearch.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Snowball.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.SpellChecker.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\SqlFu.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\StemmersNet.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\CavemanTools.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\CavemanTools.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Analyzers.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Analyzers.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Core.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Core.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.FastVectorHighlighter.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.FastVectorHighlighter.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Highlighter.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Highlighter.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Memory.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Memory.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Queries.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Queries.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Regex.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Regex.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.SimpleFacetedSearch.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.SimpleFacetedSearch.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Snowball.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.Snowball.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.SpellChecker.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\Lucene.Net.Contrib.SpellChecker.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\SqlFu.pdb
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\bin\Debug\SqlFu.xml
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\obj\Debug\QuerySamples.csprojResolveAssemblyReference.cache
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\obj\Debug\QuerySamples.dll
+C:\Users\willemm\Dropbox\Presentaties\Lucene.NET\Demos\Demo 2 - Queries\QuerySamples\obj\Debug\QuerySamples.pdb
